@@ -24,8 +24,11 @@ Nome repo: social-platform
 
 Vogliamo creare uno spazio virtuale in stile social network dove gli utenti possano condividere le proprie esperienze. Ogni utente può creare dei post, al quale può aggiungere uno o più media come foto e video. Ogni post può avere uno o più tags che servono per categorizzare i contenuti. Gli altri utenti possono interagire con il post esprimendo il loro gradimento attraverso un semplice like.
 
+
+
 # Step 1 (Diagramma ER)
-Individuate prima le entità su cui si basa la piattaforma e poi osservate come sono relazionate. Inoltre, specificate i campi e i diversi vincoli disponibili per ciascun campo, come ad esempio l'utilizzo di UNIQUE per garantire l'unicità dei valori e NOT NULL per indicare l’obbligo di fornire un valore per quel campo. Attenzione alle chiavi primarie. BONUS: espandete il diagramma per integrare anche l’entità Tags e Commenti.
+Individuate prima le entità su cui si basa la piattaforma e poi osservate come sono relazionate. Inoltre, specificate i campi e i diversi vincoli disponibili per ciascun campo, come ad esempio l'utilizzo di UNIQUE per garantire l'unicità dei valori e NOT NULL per indicare l’obbligo di fornire un valore per quel campo. Attenzione alle chiavi primarie. 
+- BONUS: espandete il diagramma per integrare anche l’entità Tags e Commenti.
 Utilizzare https://www.diagrams.net/  per la creazione dello schema. Esportare quindi il diagramma in png e caricarlo nella repo
 
 # Step 2 (MySQL Query)
