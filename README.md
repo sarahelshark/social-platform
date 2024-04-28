@@ -33,7 +33,7 @@ Utilizzare https://www.diagrams.net/  per la creazione dello schema. Esportare q
 
 # Step 2 (MySQL Query)
 Una volta che siete sicuri del vostro diagramma, potete passare alla seconda fase. Create un nuovo database nel vostro phpMyAdmin e importate il file db.sql fornito nella cartella. Aprite il file PDF e scrivete le query richieste. 
-Seleziona gli utenti che hanno postato almeno un video
+Seleziona gli utenti che hanno postato almeno un video 
 Seleziona tutti i post senza Like (13)
 Conta il numero di like per ogni post (165)
 Ordina gli utenti per il numero di media caricati (25) 
