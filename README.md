@@ -44,10 +44,11 @@ Alcune note: accanto ad alcune query abbiamo indicato il numero di risultati che
 # Step 3 (php-mysqli) parziale
 Crea una pagina che in php si connetta al db con mysqli e stampi i dati in pagina di una query a scelta tra le precedenti. Gestisci in autonomia la parte di UI.
 
-# Step 4 (OOP)
+# Step 4 (OOP) completo 
 Mettiamo ora da parte il DB e occupiamoci dei modelli.
 In una nuova cartella Models crea delle Classi per Post e Media.
 Sfrutta i principi di ereditarietà e composizione.
+
 Post.php
 all'interno della classe sono dichiarate delle variabili d'istanza
 all'interno della classe è definito un costruttore
@@ -61,6 +62,6 @@ il sistema prevede immagini e video
 all'interno della classe sono dichiarate delle variabili d'istanza
 all'interno della classe è definito un costruttore
 all'interno della classe è definito almeno un metodo
-In un nuovo file, vengono istanziati almeno due oggetti Post e stampati a schermo i valori delle relative proprietà.
+==> In un nuovo file, vengono istanziati almeno due oggetti Post e stampati a schermo i valori delle relative proprietà.
 
-# BONUS: utilizza i dati estratti in precedenza dal DB per istanziare i nuovi oggetti.
+# BONUS: utilizza i dati estratti in precedenza dal DB per istanziare i nuovi oggetti.  da finire

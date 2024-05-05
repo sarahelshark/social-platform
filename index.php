@@ -63,6 +63,8 @@
 
     // Chiusura della connessione al database
     $conn->close();
+
+
     ?>
 
     <div class="container-fluid p-0">
@@ -82,6 +84,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Dai una svolta alla tua giornata</h5>
                             <p class="card-text">Rimani aggiornato con i video e le immagini pi&ugrave; virali della settimana, guadagna il badge di fan pi&ugrave; attivo per delle sorprese...</p>
+                            
                             <div> <?php
                                     if ($result_videos->num_rows > 0) {
                                         while ($row = $result_videos->fetch_assoc()) {

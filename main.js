@@ -27,3 +27,5 @@ navLinks.forEach((link) => {
     link.classList.add("bg-primary", "rounded-2", "text-white");
   });
 });
+
+
