@@ -1,0 +1,16 @@
+body.dark-mode {
+  background-color: black;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #efefee;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #efefee;
+}
+.card-dark {
+  background-color: #111;
+  color: #fff;
+  border-color: #444;
+}
