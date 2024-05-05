@@ -14,3 +14,9 @@ body.dark-mode {
   color: #fff;
   border-color: #444;
 }
+
+
+.card.shadow:hover{
+  transform: scale(1.1) ;
+  cursor: pointer;
+}

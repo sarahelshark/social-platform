@@ -32,27 +32,32 @@
             <div class="row mt-3">
                 <div class="col-md-8">
                     <!-- area aggiornamenti -->
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            I più attivi della community
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Dai una svolta alla tua giornata</h5>
-                            <p class="card-text">Rimani aggiornato con i video e le immagini pi&ugrave; virali della settimana, guadagna il badge di fan pi&ugrave; attivo per delle sorprese...</p>
+<div class="card mb-3">
+    <div class="card-header">
+        I più attivi della community
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Dai una svolta alla tua giornata</h5>
+        <p class="card-text">Rimani aggiornato con i video e le immagini pi&ugrave; virali della settimana, guadagna il badge di fan pi&ugrave; attivo per delle sorprese...</p>
 
-                            <div> <?php
-                                    if ($result_videos->num_rows > 0) {
-                                        while ($row = $result_videos->fetch_assoc()) {
-                                            echo '<p>' . $row["user_posted_video"] . ': ' . $row["posted_videos"] . ' video(s)</p>';
-                                        }
-                                    } else {
-                                        echo '<p>Nessun video trovato.</p>';
-                                    }
-                                    ?></div>
-                            <a href="#" class="btn btn-primary">view more</a>
+        <!-- Utilizza la classe "row" per il layout della griglia -->
+        <div class="row">
+            <?php while ($row = $result_videos->fetch_assoc()) : ?>
+                <div class=" col-md-4  mb-3">
+                    <div class="card shadow">
+                        <div class="card-body d-flex justify-content-center flex-column p-4">
+                            <img src="https://picsum.photos/id/237/100/100" class="img-fluid rounded-circle" alt="Immagine profilo">
+                            <h5 class="card-title mt-2"><?= $row["user_posted_video"] ?></h5>
+                            <p class="card-text">Posted: <?= $row["posted_videos"] ?> videos</p>
                         </div>
                     </div>
+                </div>
+            <?php endwhile; ?>
+        </div>
 
+        <a href="#" class="btn btn-primary">view more</a>
+    </div>
+</div>
                     <!-- Area per inserire il post -->
                     <div class="card mb-3">
                         <div class="card-body">
