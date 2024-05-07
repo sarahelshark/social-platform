@@ -44,5 +44,23 @@ $sql_videos = "SELECT
 
 $result_videos = $conn->query($sql_videos);
 
+//Query per ottenere anteprime post 
+$sql_posts= "SELECT 
+users.id,
+users.username,
+posts.title AS title,
+posts.date,
+posts.tags,
+posts.created_at
+FROM 
+users
+JOIN 
+posts ON users.id = posts.user_id
+WHERE
+(posts.user_id, posts.date) IN (
+    SELECT user_id, MAX(date) FROM posts GROUP BY user_id
+)";
+$result_posts = $conn->query($sql_posts);
+
 // Chiusura della connessione al database
 $conn->close();

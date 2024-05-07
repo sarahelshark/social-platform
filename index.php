@@ -115,6 +115,19 @@
                         <hr>
 
 
+                    <?php endwhile; ?>
+                    <?php while ($row = $result_posts->fetch_assoc()) :
+                        ['id' => $id, 'username' => $username, 'title' => $title, 'date' => $date,'tags' => $tags,'created_at' => $created_at] = $row; ?>
+                        <div id="<?= $id ?>">
+                            <p> <strong> <?= $username ?> posted...</strong>
+                            </p>
+                            <p><?= $title ?> 
+                            </p>
+
+                            </p>
+                        </div>
+                        <hr>
+
 
                     <?php endwhile; ?>
                     <!-- Aggiungi questo pulsante sotto l'area dei risultati -->
