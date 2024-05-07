@@ -71,3 +71,41 @@ GROUP BY
  `users`.`username`
 ORDER BY 
  `num_total_likes`;
+
+//query aggiuntive
+
+voglio visualizzare id, username e info sui post per stamparli poi come preview in pagina , 
+questa query mi restituisce TUTTI gli articoli dell'utente x 
+
+ SELECT 
+    users.id,
+    users.username,
+    MIN(posts.title) AS title,
+    posts.date,
+    posts.tags,
+    posts.created_at
+FROM 
+    users
+JOIN 
+    posts ON users.id = posts.user_id
+GROUP BY
+    users.id, users.username, posts.date, posts.tags, posts.created_at;
+
+//Query precedente, ma con modifica MAX per vedere solo l'articolo piu recente di utente x, e non tutti
+quelli postati> query definitiva
+
+SELECT 
+    users.id,
+    users.username,
+    posts.title AS title,
+    posts.date,
+    posts.tags,
+    posts.created_at
+FROM 
+    users
+JOIN 
+    posts ON users.id = posts.user_id
+WHERE
+    (posts.user_id, posts.date) IN (
+        SELECT user_id, MAX(date) FROM posts GROUP BY user_id
+    );
